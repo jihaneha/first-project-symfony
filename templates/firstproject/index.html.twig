@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}home
+{% endblock %}
+
+{% block body %}
+
+	<h1>nos produits</h1>
+	<div class="row">
+		{% for i in 1..3 %}
+			<div class="col">
+				<div class="card">
+					<img src="https://picsum.photos/200/200" alt="image">
+					<div class="card-doby">
+						<h4 class="card-title text-center">superbe chaise en bois</h4>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorem, labore error fuga eos illo et, consequuntur numquam nisi ex cumque porro molestias vitae explicabo, delectus repudiandae commodi repellendus esse quia perferendis nulla vero mollitia iste? Mollitia fuga odio odit veritatis minus quia fugit velit a? Quibusdam blanditiis natus a.</p>
+						<a href="#" class="btn btn-primary btn-sm">details</a>
+						<a href="#" class="btn btn-success btn-sm">ajouter</a>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+
+	<hr>
+	<h2>un service irreprochable</h2>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maxime iusto, praesentium numquam quidem inventore.</p>
+	<div class="row">
+
+		{% include "shared/_footer.html.twig" with {
+                'color':'primary',
+                'icone':'fas fa-truck',
+                'text': "lorem15bujfhihfhjufhujhuhuh"
+            }%}
+		{% include "shared/_footer.html.twig" with {
+                'color':'success',
+                'icone':'fas fa-truck',
+                'text':'jnionrijojrppofpofpofpp'
+            }%}
+		{% include "shared/_footer.html.twig" with {
+                'color':'warning',
+                'icone':'fas fa-truck',
+                'text':'iiroirirnnod;mùmùs,vnj'
+            }%}
+
+	</div>
+{% endblock %}
