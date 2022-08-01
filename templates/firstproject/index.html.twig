@@ -4,44 +4,46 @@
 {% endblock %}
 
 {% block body %}
-
-	<h1>nos produits</h1>
-	<div class="row">
-		{% for i in 1..3 %}
-			<div class="col">
-				<div class="card">
-					<img src="https://picsum.photos/200/200" alt="image">
-					<div class="card-doby">
-						<h4 class="card-title text-center">superbe chaise en bois</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorem, labore error fuga eos illo et, consequuntur numquam nisi ex cumque porro molestias vitae explicabo, delectus repudiandae commodi repellendus esse quia perferendis nulla vero mollitia iste? Mollitia fuga odio odit veritatis minus quia fugit velit a? Quibusdam blanditiis natus a.</p>
-						<a href="#" class="btn btn-primary btn-sm">details</a>
-						<a href="#" class="btn btn-success btn-sm">ajouter</a>
+	<div class="container pt-5">
+		<h1 class="mb-4">nos produits</h1>
+		<div class="row">
+			{% for i in 1..3 %}
+				<div class="col">
+					<div class="card">
+						<img src="https://picsum.photos/200/200" alt="image">
+						<div class="card-doby">
+							<h4 class="card-title text-center mt-4">Chaise en bois</h4>
+							<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorem, labore error fuga eos illo et, consequuntur numquam nisi ex cumque porro molestias vitae explicabo, delectus repudiandae commodi repellendus esse quia perferendis nulla vero mollitia iste? Mollitia fuga odio odit veritatis minus quia fugit velit a? Quibusdam blanditiis natus a.</p>
+							<a href="#" class="btn btn-primary btn-sm">details</a>
+							<a href="#" class="btn btn-success btn-sm">ajouter</a>
+						</div>
 					</div>
 				</div>
-			</div>
-		{% endfor %}
-	</div>
+			{% endfor %}
+		</div>
 
-	<hr>
-	<h2>un service irreprochable</h2>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maxime iusto, praesentium numquam quidem inventore.</p>
-	<div class="row">
+		<hr>
+		<h2 class="m-4">un service irreprochable</h2>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsa expedita veritatis. Eligendi quibusdam omnis qui magnam maiores sit perspiciatis, tempora odit doloremque quisquam mollitia eveniet perferendis enim? Unde aliquid voluptatem iusto. Perspiciatis commodi impedit molestias sapiente ut, at maxime voluptate? Provident assumenda culpa nesciunt asperiores dicta autem amet 
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste accusantium perferendis vero? Aut soluta officiis facilis vero tenetur ad, quod at ullam rem quisquam sed laudantium voluptate expedita labore reprehenderit. Accusantium tenetur, iste sapiente neque eligendi fuga incidunt provident, accusamus saepe labore ab maxime assumenda quia corporis libero id quaerat?
+		</p>
+		<div class="row">
 
-		{% include "shared/_footer.html.twig" with {
+			{% include "shared/_footer.html.twig" with {
                 'color':'primary',
                 'icone':'fas fa-truck',
                 'text': "lorem15bujfhihfhjufhujhuhuh"
             }%}
-		{% include "shared/_footer.html.twig" with {
+			{% include "shared/_footer.html.twig" with {
                 'color':'success',
                 'icone':'fas fa-truck',
                 'text':'jnionrijojrppofpofpofpp'
             }%}
-		{% include "shared/_footer.html.twig" with {
+			{% include "shared/_footer.html.twig" with {
                 'color':'warning',
                 'icone':'fas fa-truck',
                 'text':'iiroirirnnod;mùmùs,vnj'
             }%}
-
+		</div>
 	</div>
 {% endblock %}
